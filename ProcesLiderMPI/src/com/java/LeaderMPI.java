@@ -1,9 +1,9 @@
 package com.java;
 
 import mpi.MPI;
+
 import java.util.Collections;
 import java.util.HashMap;
-import java.util.Map;
 import java.util.Random;
 
 public class LeaderMPI {
@@ -11,6 +11,7 @@ public class LeaderMPI {
 	private static final int master = 0;
 
 	public static void main(String[] args) {
+
 
 		MPI.Init(args);
 		int rank = MPI.COMM_WORLD.Rank();
